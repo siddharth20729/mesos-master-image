@@ -1,0 +1,9 @@
+---
+- name: monit | add mesos check scripts
+  copy: src=files/monit/{{ item }} dest=/etc/monit/scripts/{{ item }} mode=0755
+  with_items:
+  - mesos_master_health.sh
+- name: monit | add mesos checks
+  copy: src=files/monit/{{ item }} dest=/etc/monit/conf.d/{{ item }}
+  with_items:
+  - mesos_master_checks_checks

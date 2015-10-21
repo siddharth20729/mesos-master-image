@@ -1,0 +1,7 @@
+- name: Mesos | Install Mesos Packages
+  yum: name={{item}} state=present
+  with_items:
+    - mesos
+    - python-mesos
+    - mesos-devel
+    - mesos-java
