@@ -5,6 +5,7 @@
   vars:
     target: 127.0.0.1
   tasks:
-  - shell: iptables -I OUTPUT 1 -j ACCEPT
-  - include: tasks/mesos.yml
-  - include: tasks/monit.yml
+    - shell: iptables -I OUTPUT 1 -j ACCEPT
+    - include: tasks/mesosphere.yml
+    - include: tasks/mesos.yml
+    - include: tasks/monit.yml
