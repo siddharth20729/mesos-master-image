@@ -4,3 +4,6 @@ check process mesos_master
 
 check program mesos_master_health with path "/etc/monit/scripts/mesos_master_health.sh"
         if status !=0 then alert
+        
+check device var with path /var
+        if SPACE usage > 90% then alert
