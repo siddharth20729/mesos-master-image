@@ -1,0 +1,12 @@
+Unit]
+Description=Mesos Master
+After=network.target cloud-final.service
+Wants=network.target
+
+[Service]
+ExecStart=/usr/local/sbin/mesos-master --zk=
+RestartSec=20
+LimitNOFILE=16384
+
+[Install]
+WantedBy=multi-user.target

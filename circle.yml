@@ -3,8 +3,8 @@ machine:
   - sudo curl -sSL https://stedolan.github.io/jq/download/linux64/jq -o /usr/local/bin/jq
   - sudo chmod +x /usr/local/bin/jq
   - sudo pip install awscli
-  - curl -sSLO https://dl.bintray.com/mitchellh/packer/packer_0.8.1_linux_amd64.zip
-  - unzip -d ~/bin packer_0.8.1_linux_amd64.zip
+  - curl -sSLO https://dl.bintray.com/mitchellh/packer/packer_0.8.6_linux_amd64.zip
+  - unzip -d ~/bin packer_0.8.6_linux_amd64.zip
 
 test:
   override:
