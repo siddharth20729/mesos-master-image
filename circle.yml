@@ -9,4 +9,4 @@ machine:
 test:
   override:
   - ./run:
-      timeout: 3600 # one hour
+      timeout: 7200 # two hours
