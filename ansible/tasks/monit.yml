@@ -6,4 +6,4 @@
 - name: monit | add mesos checks
   copy: src=files/monit/{{ item }} dest=/etc/monit/conf.d/{{ item }}
   with_items:
-  - mesos_master_checks_checks
+  - mesos_master_checks
